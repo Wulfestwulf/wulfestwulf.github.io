@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="links">
+            <a href="../html/index.html">Home</a><a href="../html/aboutme.html">About Me</a><a href="../html/projects.html">Projects</a><a href="../html/resume.html">Resume</a><a href="../html/contact.html">Contact</a>
+        </nav>
+        <hr>
+        <br>
+    </header>
+    <div id="maincontent">
+        <div id="lefttext">
+            <p>
+                This website was created during my first term in college as a final project for web development. This website will let you know about me, the projects I have made, my resume, and the ways to contact me.
+                This is a personal website, and may or may not be updated in the future.
+            </p>
+        </div>
+        <div id="rightstuff">
+            <div id="twitch-embed"></div>
+            <p>Stream I actively moderate. Its a 24/7 ferret channel.</p>
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            <script type="text/javascript">
+                new Twitch.Embed("twitch-embed", {
+                    width: "100%",
+                    height: 470,
+                    channel: "ferretsoftware",
+                    muted: true,
+                    layout: "video",
+                });
+            </script>
+        </div>
+    </div>
+    <footer>
+        <small>All materials copyrighted Matthew Kershaw 2023 - 2023 ©</small>
+    </footer>
+</body>
+</html>
